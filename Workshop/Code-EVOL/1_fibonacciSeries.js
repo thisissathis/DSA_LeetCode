@@ -33,4 +33,5 @@ function fibonacci(n) {
 
   return fibArray;
 }
-
+var result = fibonacci(15)
+console.log("fibonacci result", result)
