@@ -35,3 +35,11 @@ function isPowerOfTwo(n) {
 }
 var result = isPowerOfTwo(16);
 console.log("isPowerOfTwo result:", result);
+
+//BitWise Method: powerfull
+function isPowerOfTwo(n) {
+    if (n <= 0) {
+        throw new Error('n must be a positive integer');
+    }
+    return (n & (n - 1)) === 0;
+}
